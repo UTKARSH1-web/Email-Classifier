@@ -17,6 +17,6 @@ def predict(text, model, tfidf):
     result = model.predict(vector)[0]
 
     if result == 1:
-        return "Spam 🚫"
+        return "Spam detected 🚫"
     else:
-        return "Not Spam ✅"
+        return "Not Spam detected ✅"
